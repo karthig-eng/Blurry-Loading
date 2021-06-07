@@ -1,0 +1,42 @@
+/* google fonts go to fonts.google.com
+select how many fonts you want,link and import 
+will be there link is for html and import for css copy that by 
+leaving style tag and paste in css
+ */
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: flex;
+    
+    align-items: center;
+    /* the items has not come to ceter of the page bcz the hegit should be extended */
+    justify-content: center;
+    /* take up the entire height of browser */
+    height: 100vh;
+    /* scroll bar hidden */
+    overflow: hidden;
+ }
+ .bg{
+    background: url("images/frontenddev.jpg");
+    position: absolute;
+  /* top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px); */
+  width:100vw;
+  height: 100vh;
+  
+  z-index: -1;
+  filter: blur(70px);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+ .loading-text{
+    font-size: 30px;
+    color: #fff;
+ }
