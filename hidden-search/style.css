@@ -1,0 +1,67 @@
+/* google fonts go to fonts.google.com
+select how many fonts you want,link and import 
+will be there link is for html and import for css copy that by 
+leaving style tag and paste in css
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    background: linear-gradient(90deg,#06D629,#79E08B);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    
+    /* align items horzontally */
+    align-items: center;
+    /* the items has not come to ceter of the page bcz the hegit should be extended */
+    justify-content: center;
+    /* take up the entire height of browser */
+    height: 100vh;
+    /* scroll bar hidden */
+    overflow: hidden;
+ }
+ .search{
+    position: relative;
+    height: 50px;
+ }
+ .search .input{
+background: #ffff;
+border: 0;
+padding: 5px;
+width: 50px;
+height: 50px;
+font-size: 18px;
+transition: width .5s ease;
+
+ }
+ .btn{
+    background:#ffff ;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    transition: transform 0.5s ease-in;
+    cursor: pointer;
+    position: absolute;
+   
+   }
+   .btn:focus,
+   .input:focus {
+     outline: none;
+   }
+.search.active .input{
+   width: 200px;
+}
+.search.active .btn{
+   transform: translateX(198px);
+}
+/* class active add agumbodhu adhoda style seperate ah eludhu
+    add panradhuku java script eludhu
+    serch la active irukumbothu input box widht expand agudhu
+    and search btn 198 px move agudhu 
+    transition edhuku na smooth ah idhu nadaka  so enna idhula idhu nadaka podhu na
+    input box la um and btn la um so adhula transition add pannu*/

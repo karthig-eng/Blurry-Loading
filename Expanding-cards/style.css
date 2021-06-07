@@ -1,0 +1,68 @@
+/* google fonts go to fonts.google.com
+select how many fonts you want,link and import 
+will be there link is for html and import for css copy that by 
+leaving style tag and paste in css
+ */
+ @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    /* align items horzontally */
+    align-items: center;
+    /* the items has not come to ceter of the page bcz the hegit should be extended */
+    justify-content: center;
+    /* take up the entire height of browser */
+    height: 100vh;
+    /* scroll bar hidden */
+    overflow: hidden;
+ }
+ .container{
+    display: flex;
+    width:90vw;
+ }
+ .panel{
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #ffff;
+    border-radius: 50px;
+    flex:0.5;
+    cursor: pointer;
+    margin:10px;
+    position: relative;
+    transition:flex 0.7s ease-in;
+ }
+ .panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin:0;
+    opacity: 0;
+ }
+ .panel.active{
+    flex:10;
+}
+.panel.active h3{
+   opacity: 1;
+   transition: opacity 0.3s ease-in 0.4s;
+}
+/* media queries  */
+/* if the screen is less than 480 px apply 
+this style */
+@media (max-width: 480px) {
+   .container {
+     width: 100vw;
+   }
+   .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+
+     /* DONT DISPLAY THIS */
+    display: none;
+  }
+}

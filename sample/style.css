@@ -1,0 +1,23 @@
+/* google fonts go to fonts.google.com
+select how many fonts you want,link and import 
+will be there link is for html and import for css copy that by 
+leaving style tag and paste in css
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* align items horzontally */
+    align-items: center;
+    /* the items has not come to ceter of the page bcz the hegit should be extended */
+    justify-content: center;
+    /* take up the entire height of browser */
+    height: 100vh;
+    /* scroll bar hidden */
+    overflow: hidden;
+ }
